@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Satisfy&display=swap');
+.mainpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    transition: 1s all;
+    flex-wrap: wrap;
+
+}
+*{
+    cursor: none;
+}
+html,body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      overflow-x: hidden;
+  
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    margin: 4vmin;
+    padding: 18px;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    background:rgb(255,255,255,0.2);
+    border: 1px solid white;
+    border-radius:10px ;
+    transition: 0.3s;
+
+}
+a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: transparent;
+  
+
+}
+@media only screen and (max-width: 876px) {
+    *{
+        cursor: auto;
+    }
+    .li{
+        display: none!important;
+    }
+  .mainpage{
+      flex-direction: column;
+  }
+  .header{
+      position: relative!important;
+      font-size:40px!important ;
+  
+
+  }
+  }
+  .header{
+      position: absolute;
+      justify-self: center;
+      align-self: center;
+      width: 100%;
+      text-align: center;
+      font-size: 33px;
+      font-weight: 500;
+      font-family: 'Pattaya', sans-serif;
+      font-family: 'Satisfy', cursive;
+      font-size: 60px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .li{display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding: 20px;
+    
+      font-weight: bold;
+      border-radius: 20px;
+      text-decoration: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 50%;
+      color:white;
+  
+      
+     
+  } 
+  .ul li a{
+  
+  text-decoration: none;
+  
+  
+  
+  }
+  .li,.li3{
+      position: absolute;
+      
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid white;
+
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      transition: all 0.3s ease;
+      transition-property: transform , background ;
+      transform-origin: 100% 100%;
+      z-index: -1;
+      border-radius: 50%;
+    
+  }
+  .li2{
+     
+     transform: scale(2.2);
+     background-color: rgb(0, 0, 0,0.8);
+     
+    
+  }
+  p{
+      width: max-content;
+  }
+
+  .li2_hover{
+      
+      color: white;
+  }
